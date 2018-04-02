@@ -2,8 +2,9 @@
 
 require 'php_connection.php';
 $getdata_query="select name,salary from employeetable;";
+$result= mysqli_query($conn, $getdata_query);
 
-if($getdata_query)
+if($result)
 {
 while($row= mysqli_fetch_array($getdata_query))
 {
