@@ -1,8 +1,8 @@
 <?php
 
 require 'php_connection.php';
-
-$user_name=$_POST["user_name"];
+//parameters in quotes " " are got from android at URLEncoder.encode
+$user_name=$_POST["username"]; 
 $user_pass=$_POST["password"];
 $mysql_query="select * from employeetable where username like '$user_name' and password like '$user_pass';";
 $result= mysqli_query($conn, $mysql_query);
