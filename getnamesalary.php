@@ -2,11 +2,11 @@
 
 require 'php_connection.php';
 $getdata_query="select name,salary from employeetable;";
-$result= mysqli_query($conn, $getdata_query);
+$getDataResult= mysqli_query($conn, $getdata_query);
 
-if($result)
+if($getDataResult)
 {
-while($row= mysqli_fetch_array($getdata_query))
+while($row= mysqli_fetch_array($getDataResult))
 {
   $flag[]=$row;  
 }
