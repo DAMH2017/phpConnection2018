@@ -10,7 +10,7 @@ $result= mysqli_query($conn, $mysql_query);
 if(mysqli_num_rows($result)>0)
 {
     $row= mysqli_fetch_assoc($result);
-    $name=$row["Name"];
+    $name=$row["name"];
     echo 'Login success, welcome '.$name;
 }
  else {
