@@ -1,7 +1,7 @@
 <?php
 
 require 'php_connection.php';
-$getdata_query="select name,salary from employeetable;";
+$getdata_query="select name,salary from employeetable";
 $getDataResult= mysqli_query($conn, $getdata_query);
 
 if($getDataResult)
