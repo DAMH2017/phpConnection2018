@@ -9,7 +9,9 @@ $result= mysqli_query($conn, $mysql_query);
 
 if(mysqli_num_rows($result)>0)
 {
-    echo 'Login success';
+    $row= mysqli_fetch_assoc($result);
+    $name=$row["Name"];
+    echo 'Login success, welcome '.$name;
 }
  else {
     echo 'Login not success';    
