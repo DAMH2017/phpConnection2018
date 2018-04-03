@@ -3,7 +3,7 @@
 require 'php_connection.php';
 $param1=$_POST["xAxis"];
 $param2=$_POST["yAxis"];
-$getdata_query="select '$param1','$param2' from employeetable";
+$getdata_query="select name,salary from employeetable";
 $getDataResult= mysqli_query($conn, $getdata_query);
 
 if($getDataResult)
