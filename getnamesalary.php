@@ -1,6 +1,8 @@
 <?php
 
 require 'php_connection.php';
+$param1=$_POST["param1"];
+$param1=$_POST["param2"];
 $getdata_query="select name,salary from employeetable";
 $getDataResult= mysqli_query($conn, $getdata_query);
 
